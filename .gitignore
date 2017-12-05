@@ -5,6 +5,10 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 
+# My attempt at reducing clutter
+/[Aa]ssets/
+/[Pp]rojectSettings/
+
 # Visual Studio 2015 cache directory
 /.vs/
 
@@ -32,3 +36,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Workspace
+*.sublime-workspace
