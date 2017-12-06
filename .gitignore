@@ -6,7 +6,15 @@
 /Assets/AssetStoreTools*
 
 # My attempt at reducing clutter
-/[Aa]ssets/
+#/[Aa]ssets/
+/Assets/Animation/Animations/
+/Assets/Audio/
+/Assets/Completed/
+/Assets/Fonts/
+/Assets/Sprites/
+/Assets/TutorialInfo/
+/Assets/_Complete-Game*
+
 /[Pp]rojectSettings/
 
 # Visual Studio 2015 cache directory
