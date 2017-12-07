@@ -124,23 +124,11 @@ public class NewBehaviourScript : MonoBehaviour {
 		int enemyCount = (int)Mathf.Log(level,2f);
 
 		// Place enemies at random; min and max are the same, so these are arguments for each parameter
-		LayoutObjectAtRandom(enemyCount, enemyCount, enemyCount);
+		LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
 
 		// Place exit in same location -- top right corner of walkable perimeter
 		Instantiate(exit, new Vector3(columns - 1, rows - 1, 0F), Quaternion.identity);
 
 	}
-
-	/* Delete these functions
-
-	// Use this for initialization
-	void Start () {
 	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	*/
 }
