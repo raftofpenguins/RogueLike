@@ -120,8 +120,8 @@ public class NewBehaviourScript : MonoBehaviour {
 		LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
 		LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
 
-		// Create logarithmic increase in difficulty; 1 enemy at lvl 2, 2 at 4, 3 at 8, etc. ; Mathf.log() returns float, so we cast as int
-		int enemyCount = (int)Mathf.log(level,2f);
+		// Create logarithmic increase in difficulty; 1 enemy at lvl 2, 2 at 4, 3 at 8, etc. ; Mathf.Log() returns float, so we cast as int
+		int enemyCount = (int)Mathf.Log(level,2f);
 
 		// Place enemies at random; min and max are the same, so these are arguments for each parameter
 		LayoutObjectAtRandom(enemyCount, enemyCount, enemyCount);
@@ -132,7 +132,7 @@ public class NewBehaviourScript : MonoBehaviour {
 	}
 
 	/* Delete these functions
-	
+
 	// Use this for initialization
 	void Start () {
 	
