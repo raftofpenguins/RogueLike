@@ -3,7 +3,8 @@ using System; // Added to use Serializable attribute
 using System.Collections.Generic; // Added .Generic to use Lists
 using Random = UnityEngine.Random; // Specify because there is a Random in both UnityEngine and System
 
-public class NewBehaviourScript : MonoBehaviour {
+// public class NewBehaviourScript : MonoBehaviour {
+public class BoardManager : MonoBehaviour {
 
 	[Serializable]
 	public class Count {
