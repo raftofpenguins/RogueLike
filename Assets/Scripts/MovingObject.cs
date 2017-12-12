@@ -60,9 +60,7 @@ public abstract class MovingObject : MonoBehaviour {
 	}
 
 	protected virtual void AttemptMove <T> (int xDir, int yDir) 
-		where T : Component;
-		// <T> => generic parameter used to specify type of component we expect unit to interact w/ if blocked
-		// For enemies, this is the player; for the player, this is walls, so player can 
+		where T : Component
 	{
 		RaycastHit2D hit;
 		bool canMove = Move (xDir, yDir, out hit); // Set to true if successful or false if not
